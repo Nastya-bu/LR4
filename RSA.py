@@ -4,7 +4,6 @@ def main():
     n = e = d = 0
     n, e, f = public_keys()
     d = private_key(e,f)
-    #print("\nN: ", n, "\ne: ", e, "\nf: ",f,"\nd: ", d)
     f = open('key.txt', 'w')
     f.write("Public keys: \n e = ")
     f.write(str(e))
@@ -78,7 +77,7 @@ def gcd(a,b):
 
 
 def gcdex(e, f):
-    """ Hасширенный алгоритм Евклида"""
+    """ Расширенный алгоритм Евклида"""
     if f == 0:
         return e, 1, 0
     else:
